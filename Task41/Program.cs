@@ -1,6 +1,6 @@
 ﻿/*Пользователь вводит с клавиатуры M чисел. 
 Посчитайте, сколько чисел больше 0 ввёл пользователь.*/
-int size = 10;
+int size = 7;
 
 int[] EnterNumbers(int size)
 {
@@ -30,6 +30,11 @@ int CountPositiveNumbers(int[] numbers)
     }
     return count;
 }
-Console.WriteLine("Количество положительных чисел: " + CountPositiveNumbers(EnterNumbers(size)));
+
+int[] z = EnterNumbers(size);
+int y = CountPositiveNumbers(z);
+Console.WriteLine("Количество положительных чисел: " + y);
+
+//Console.WriteLine("Количество положительных чисел: " + CountPositiveNumbers(EnterNumbers(size)));
  
  
